@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
-	<div class="container">
+	<div class="container" style="border:2px solid black; margin:30px; padding:30px;">
 		<form action="loginCheck.spring" method="post">
 			<div class="form-outline mb-2">
 				<label class="form-label">Email address</label> <input type="email"
@@ -33,14 +33,12 @@
 			<div class="form-check">
 				<input class="form-check-input" type="radio" name="typeOfUser"
 					value="customer" /> <label class="form-check-label">Customer</label>
-			</div>
+			</div> <br><br>
 
 			<input type="submit" class="btn btn-outline-primary" value="Sign In" />
 			<input type="reset" class="btn btn-outline-light" value="Reset" />
+			<a href="customerSignUp.spring" class="btn btn-outline-warning">Sign Up</a>
 		</form>
-		<div>
-			<a href="customerSignUp.spring" class="link-info">Sign Up</a>
-		</div>
 		<span style="color: red">${requestScope.msg}</span>
 	</div>
 </body>
