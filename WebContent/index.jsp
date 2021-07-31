@@ -9,6 +9,7 @@
 <body>
 	<div class="container">
 		<h2>Welcome to, Grocers Application System</h2>
+		<%@include file="login.jsp" %>
 	</div>
 </body>
 </html>
